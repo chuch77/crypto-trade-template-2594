@@ -40,22 +40,23 @@ const Header = () => {
           </div>
 
           {/* Search Bar */}
-          <div className="hidden md:flex flex-1 max-w-md mx-8">
+          <div className="hidden md:flex flex-1 max-w-md mx-4 lg:mx-8">
             <div className="relative w-full">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
               <Input 
                 placeholder="Buscar productos..." 
-                className="pl-10 pr-4 border-primary focus:ring-primary"
+                className="pl-10 pr-20 border-primary focus:ring-primary"
               />
-              <Button className="absolute right-0 top-0 h-full rounded-l-none bg-primary hover:bg-secondary-color">
-                Buscar
+              <Button className="absolute right-0 top-0 h-full rounded-l-none bg-primary hover:bg-primary/90 px-3">
+                <span className="hidden lg:inline">Buscar</span>
+                <Search className="h-4 w-4 lg:hidden" />
               </Button>
             </div>
           </div>
 
           {/* User Actions */}
-          <div className="flex items-center space-x-4">
-            <div className="hidden md:flex items-center space-x-4">
+          <div className="flex items-center space-x-2 md:space-x-4">
+            <div className="hidden lg:flex items-center space-x-2 xl:space-x-4">
               <LoginDropdown />
               <FavoritesDropdown />
               <OrdersDropdown />
@@ -65,7 +66,7 @@ const Header = () => {
             <CartDropdown />
 
             <Button variant="outline" size="icon" className="md:hidden">
-              <Menu className="h-4 w-4" />
+              <Search className="h-4 w-4" />
             </Button>
           </div>
         </div>
