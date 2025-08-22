@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 // Importación directa de imágenes
-import iphoneHero from '../assets/iphone-hero.jpg';
-import iphoneProduct from '../assets/iphone-product.jpg';
-import macbookProduct from '../assets/macbook-product.jpg';
-import headphonesProduct from '../assets/headphones-product.jpg';
+import iphoneHero from '@/assets/iphone-hero.jpg';
+import iphoneProduct from '@/assets/iphone-product.jpg';
+import macbookProduct from '@/assets/macbook-product.jpg';
+import headphonesProduct from '@/assets/headphones-product.jpg';
 
 const SimpleHeroCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
