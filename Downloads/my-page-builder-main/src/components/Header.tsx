@@ -16,11 +16,11 @@ const Header = () => {
     <header className="bg-background sticky top-0 z-50 shadow-sm">
       {/* Main Header */}
       <MegaMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-2 sm:px-4 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           {/* Logo with Hamburger Menu */}
-          <div className="flex items-center space-x-3">
-            <h1 className="text-2xl font-bold text-primary">ElectroZone</h1>
+          <div className="flex items-center space-x-2 sm:space-x-3">
+            <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-primary">ElectroZone</h1>
             <Button 
               variant="ghost" 
               size="icon" 
@@ -55,7 +55,7 @@ const Header = () => {
           </div>
 
           {/* User Actions */}
-          <div className="flex items-center space-x-2 md:space-x-4">
+          <div className="flex items-center space-x-1 sm:space-x-2 md:space-x-4">
             <div className="hidden lg:flex items-center space-x-2 xl:space-x-4">
               <LoginDropdown />
               <FavoritesDropdown />
@@ -65,7 +65,7 @@ const Header = () => {
             
             <CartDropdown />
 
-            <Button variant="outline" size="icon" className="md:hidden">
+            <Button variant="outline" size="sm" className="md:hidden p-2">
               <Search className="h-4 w-4" />
             </Button>
           </div>

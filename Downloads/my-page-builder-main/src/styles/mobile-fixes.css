@@ -1,0 +1,67 @@
+/* Mobile-specific fixes */
+
+/* Prevent horizontal scroll on mobile */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Better touch targets */
+@media (max-width: 640px) {
+  button, a, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Prevent zoom on form inputs */
+  input, textarea, select {
+    font-size: 16px !important;
+  }
+  
+  /* Better spacing for small screens */
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  /* Fix text overflow */
+  h1, h2, h3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Improve card layouts */
+  .card {
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Better button spacing */
+  .space-x-4 > * + * {
+    margin-left: 0.5rem;
+  }
+  
+  /* Fix carousel on very small screens */
+  .hero-carousel {
+    min-height: 350px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 375px) {
+  .container {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  
+  h1 {
+    font-size: 1.25rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.25rem;
+  }
+  
+  .text-3xl {
+    font-size: 1.5rem;
+  }
+}
