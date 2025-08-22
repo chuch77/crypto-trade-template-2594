@@ -19,6 +19,13 @@
   </head>
 
   <body>
+    <script>
+      try {
+        const k='theme', s=localStorage.getItem(k);
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (s === 'dark' || (!s && prefersDark)) document.documentElement.classList.add('dark');
+      } catch(e) {}
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

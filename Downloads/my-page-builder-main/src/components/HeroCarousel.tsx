@@ -142,7 +142,7 @@ const HeroCarousel = () => {
             </div>
           </div>
         </div>
-      ))
+      ))}
       
       {/* Carousel Controls */}
       <div className="carousel-indicators">

@@ -60,9 +60,39 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Deploy
 
-Simply open [Lovable](https://lovable.dev/projects/e8d4c2e8-d4a1-471c-b615-98831d4b4f35) and click on Share -> Publish.
+### Local Build Test
+```sh
+rm -rf node_modules dist
+npm install
+npm run build
+```
+
+### Vercel Deploy
+1. Import repository to Vercel
+2. Framework Preset: **Vite**
+3. Build Command: `npm run build`
+4. Output Directory: `dist`
+5. Node.js Version: 18+
+
+### Netlify Deploy
+**Option 1: CLI**
+```sh
+npm run build
+netlify deploy --prod --dir=dist
+```
+
+**Option 2: Drag & Drop**
+1. Run `npm run build`
+2. Drag `dist/` folder to Netlify
+
+**Requirements:**
+- Node.js 18+
+- devDependencies must be included in build
+
+### Original Lovable Deploy
+Open [Lovable](https://lovable.dev/projects/e8d4c2e8-d4a1-471c-b615-98831d4b4f35) and click Share → Publish.
 
 ## Can I connect a custom domain to my Lovable project?
 
