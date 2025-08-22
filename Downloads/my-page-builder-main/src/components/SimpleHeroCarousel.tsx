@@ -61,7 +61,7 @@ const SimpleHeroCarousel = () => {
   };
 
   return (
-    <div className={`relative bg-gradient-to-r ${products[currentIndex].bgColor} py-6 sm:py-8 md:py-16 transition-colors duration-500 min-h-[400px] sm:min-h-[500px] md:min-h-[600px]`}>
+    <div className={`relative bg-gradient-to-r ${products[currentIndex].bgColor} py-8 sm:py-12 md:py-16 transition-colors duration-500 min-h-[450px] sm:min-h-[550px] md:min-h-[600px]`}>
       <div className="container mx-auto px-2 sm:px-4 h-full">
         <div className="flex flex-col md:flex-row items-center justify-between h-full">
           {/* Price Section */}
@@ -69,19 +69,19 @@ const SimpleHeroCarousel = () => {
             <div className="inline-block bg-white/20 px-2 py-1 sm:px-3 sm:py-1 md:px-4 md:py-2 rounded-full mb-2 sm:mb-3 md:mb-4 backdrop-blur-sm">
               <span className="font-bold text-xs sm:text-sm md:text-base">OFERTA ESPECIAL | {products[currentIndex].discount} OFF</span>
             </div>
-            <div className="bg-white/20 p-3 sm:p-4 md:p-6 rounded-xl shadow-lg inline-block backdrop-blur-sm">
-              <span className="text-2xl sm:text-3xl md:text-5xl font-bold block mb-1 md:mb-2">{products[currentIndex].price}</span>
-              <span className="text-base sm:text-lg md:text-2xl line-through text-white/70">{products[currentIndex].originalPrice}</span>
+            <div className="bg-white/20 p-4 sm:p-5 md:p-6 rounded-xl shadow-lg inline-block backdrop-blur-sm">
+              <span className="text-3xl sm:text-4xl md:text-5xl font-bold block mb-1 md:mb-2">{products[currentIndex].price}</span>
+              <span className="text-lg sm:text-xl md:text-2xl line-through text-white/70">{products[currentIndex].originalPrice}</span>
             </div>
           </div>
           
           {/* Image Section */}
           <div className="relative order-1 md:order-2 mb-3 sm:mb-4 md:mb-0">
-            <div className="bg-white/20 p-3 sm:p-4 md:p-8 rounded-2xl backdrop-blur-sm shadow-xl">
+            <div className="bg-white/20 p-4 sm:p-6 md:p-8 rounded-2xl backdrop-blur-sm shadow-xl">
               <img 
                 src={products[currentIndex].image} 
                 alt={`Product ${currentIndex + 1}`}
-                className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-lg mx-auto object-contain h-[150px] sm:h-[200px] md:h-[350px] drop-shadow-2xl"
+                className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-lg mx-auto object-contain h-[220px] sm:h-[280px] md:h-[350px] drop-shadow-2xl"
               />
             </div>
             <div className="absolute -bottom-1 -right-1 sm:-bottom-2 sm:-right-2 md:-bottom-4 md:-right-4 bg-white text-blue-700 text-xs sm:text-sm md:text-lg font-bold p-1.5 sm:p-2 md:p-4 rounded-full shadow-lg transform rotate-12 animate-pulse">
