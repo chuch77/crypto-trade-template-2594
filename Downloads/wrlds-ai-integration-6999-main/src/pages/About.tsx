@@ -29,7 +29,7 @@ const About = () => {
               transition={{ duration: 0.5 }} 
               className="text-4xl font-bold mb-6"
             >
-              About WRLDS Technologies
+              Sobre Mí - Jesús Eliud Soto Méndez
             </motion.h1>
             
             <div className="prose prose-lg max-w-none">
@@ -39,7 +39,7 @@ const About = () => {
                 transition={{ duration: 0.5, delay: 0.2 }} 
                 className="text-xl text-gray-600 mb-12"
               >
-                We're a team of innovators dedicated to revolutionizing smart textile technology for industries worldwide.
+                Desarrollador Full Stack Junior apasionado por crear soluciones web innovadoras y escalables que transforman ideas en realidad digital.
               </motion.p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
@@ -49,14 +49,14 @@ const About = () => {
                   transition={{ duration: 0.6 }}
                   className="space-y-6"
                 >
-                  <h2 className="text-3xl font-bold">Our Mission</h2>
+                  <h2 className="text-3xl font-bold">Mi Misión</h2>
                   <p className="text-gray-600">
-                    At WRLDS Technologies, we're on a mission to transform ordinary textiles into intelligent, 
-                    data-driven solutions that improve safety, performance, and quality of life across industries.
+                    Como desarrollador Full Stack, mi misión es crear aplicaciones web robustas y escalables 
+                    que resuelvan problemas reales y mejoren la experiencia del usuario final.
                   </p>
                   <p className="text-gray-600">
-                    We believe that by embedding intelligence into everyday fabrics, we can create a more 
-                    connected, responsive, and safer world.
+                    Me especializo en el desarrollo completo de aplicaciones, desde el frontend con React y TypeScript 
+                    hasta el backend con Node.js, siempre enfocándome en las mejores prácticas y código limpio.
                   </p>
                 </motion.div>
                 
@@ -66,23 +66,23 @@ const About = () => {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="bg-gray-50 rounded-2xl p-8 border border-gray-100"
                 >
-                  <h3 className="text-2xl font-bold mb-4">Our Values</h3>
+                  <h3 className="text-2xl font-bold mb-4">Habilidades Técnicas</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Innovation:</strong> We push boundaries to create solutions that weren't possible before.</span>
+                      <span><strong>Frontend:</strong> React, TypeScript, Tailwind CSS, Next.js, HTML5, CSS3</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Quality:</strong> We're committed to excellence in every sensor, algorithm, and solution we deliver.</span>
+                      <span><strong>Backend:</strong> Node.js, Express, APIs REST, Bases de datos SQL/NoSQL</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Collaboration:</strong> We work closely with our clients to ensure their unique needs are met.</span>
+                      <span><strong>Herramientas:</strong> Git, GitHub, VS Code, Postman, Docker, Vercel</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Impact:</strong> We measure success by the tangible differences our technology makes in the real world.</span>
+                      <span><strong>E-commerce:</strong> Integración de pagos, gestión de inventarios, UX/UI</span>
                     </li>
                   </ul>
                 </motion.div>
@@ -94,22 +94,22 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="mb-16"
               >
-                <h2 className="text-3xl font-bold mb-6">Our Story</h2>
+                <h2 className="text-3xl font-bold mb-6">Mi Historia</h2>
                 <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
                   <p className="text-gray-600 mb-4">
-                    We started with the ambition to make an inherently scattered and complex development area modular, 
-                    smart and available to analog brands. After successfully raising millions of dollars for development, 
-                    we spent the first two years in full code mode.
+                    Mi pasión por la programación comenzó cuando descubrí el poder de transformar ideas en 
+                    aplicaciones funcionales. Desde entonces, me he dedicado a perfeccionar mis habilidades 
+                    como desarrollador Full Stack, especializandome en tecnologías modernas como React y Node.js.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    The goal was to turn all the scattered hardware and building blocks into simple modules to be 
-                    assembled like Lego. During this time we took in a range of customers for whom we built prototypes - 
-                    a way for us to make sure what we built had bearing in real world use cases.
+                    A lo largo de mi carrera, he desarrollado más de 5 proyectos completos, incluyendo aplicaciones 
+                    de e-commerce, plataformas web interactivas y sistemas de gestión. Cada proyecto me ha enseñado 
+                    nuevas técnicas y me ha ayudado a crecer como desarrollador.
                   </p>
                   <p className="text-gray-600">
-                    In 2023 we felt we had reached a technology level allowing us to start working on enterprise level. 
-                    Since then, we have focused on textile integrations because of the enormous potential smart textiles 
-                    have across multiple industries from healthcare to public safety.
+                    Actualmente, busco oportunidades para aplicar mis conocimientos en proyectos desafiantes 
+                    donde pueda contribuir al éxito del equipo mientras continúo aprendiendo y evolucionando 
+                    en el mundo del desarrollo web.
                   </p>
                 </div>
               </motion.div>
