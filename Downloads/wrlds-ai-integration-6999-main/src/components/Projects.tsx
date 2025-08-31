@@ -94,7 +94,7 @@ const Projects = () => {
     if (cryptoProject && cryptoProject.images) {
       const interval = setInterval(() => {
         setCryptoImageIndex(prev => (prev + 1) % cryptoProject.images.length);
-      }, 1500);
+      }, 800);
       return () => clearInterval(interval);
     }
   }, []);
