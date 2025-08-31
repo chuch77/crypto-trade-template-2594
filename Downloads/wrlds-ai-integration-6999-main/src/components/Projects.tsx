@@ -44,13 +44,13 @@ const projects = [
     description: "Aplicación para seguimiento de criptomonedas con gráficos en tiempo real, portfolio personal y alertas de precios.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
     images: [
-      "/lovable-uploads/078a129e-0f98-4d91-af61-873687db1a04.png",
-      "/lovable-uploads/927dae7e-6aaf-4b76-add2-1287a1dd9dc0.png",
-      "/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png",
-      "/lovable-uploads/5262afdb-dd24-4d5e-be66-7c6717adbca9.png",
-      "/lovable-uploads/4187f423-ba69-4043-be76-c43098488348.png",
-      "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png",
-      "/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png"
+      "/lovable-uploads/Captura de Pantalla 2025-08-30 a la(s) 20.34.21.png",
+      "/lovable-uploads/Captura de Pantalla 2025-08-30 a la(s) 20.34.52.png",
+      "/lovable-uploads/Captura de Pantalla 2025-08-30 a la(s) 20.35.12.png",
+      "/lovable-uploads/Captura de Pantalla 2025-08-30 a la(s) 20.35.27.png",
+      "/lovable-uploads/Captura de Pantalla 2025-08-30 a la(s) 20.36.02.png",
+      "/lovable-uploads/Captura de Pantalla 2025-08-30 a la(s) 20.36.16.png",
+      "/lovable-uploads/Captura de Pantalla 2025-08-30 a la(s) 20.36.36.png"
     ],
     currentImageIndex: 0,
     link: "/projects/crypto"
