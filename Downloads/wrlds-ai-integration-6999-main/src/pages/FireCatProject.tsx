@@ -1,133 +1,146 @@
 
 import ProjectPageLayout from '@/components/ProjectPageLayout';
-import { Shield, Radio, Activity, Box } from 'lucide-react';
+import { TrendingUp, BarChart3, Wallet, Shield } from 'lucide-react';
 
-const FireCatProject = () => {
+const CryptoProject = () => {
   return (
     <ProjectPageLayout
-      title="FireCat's 6th SENSE"
-      subtitle="Advanced safety system for high-risk environments"
+      title="Crypto Trading Platform"
+      subtitle="Plataforma moderna de trading de criptomonedas"
       imageUrl="/lovable-uploads/93ab0638-8190-4ccf-897f-21fda7f4f5ad.png"
-      brandName="FireCat Group"
+      brandName="Jesús Soto Dev"
       darkMode={true}
     >
-      <h2 className="text-3xl font-bold mb-6">Case Study: FireCat's 6th SENSE by WRLDS Technologies</h2>
+      <div className="mb-8">
+        <div className="flex items-center gap-4 mb-6">
+          <a 
+            href="https://crypto-trade-template-2594.vercel.app" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+          >
+            Ver Proyecto Live →
+          </a>
+          <a 
+            href="https://github.com/chuch77/crypto-trade-template-2594" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors font-semibold"
+          >
+            Ver Código →
+          </a>
+        </div>
+      </div>
+      
+      <h2 className="text-3xl font-bold mb-6">Crypto Trading Platform - Proyecto Full Stack</h2>
       
       <div className="bg-gray-50 p-6 rounded-lg mb-8">
-        <h3 className="text-xl font-semibold mb-2">Background</h3>
+        <h3 className="text-xl font-semibold mb-2">Descripción del Proyecto</h3>
         <p>
-          FireCat Group aimed to enhance the safety and operational effectiveness of personnel in high-risk 
-          environments such as law enforcement, military operations, and firefighting. They required an advanced, 
-          integrated sensor solution that could provide critical real-time data for risk management and decision-making.
+          Plataforma moderna de trading de criptomonedas desarrollada con React y TypeScript. 
+          Incluye dashboard interactivo, gráficos en tiempo real, gestión de portfolio y 
+          sistema de alertas para traders.
         </p>
       </div>
       
-      <h3 className="text-2xl font-semibold mb-4">Challenge</h3>
+      <h3 className="text-2xl font-semibold mb-4">Desafío Técnico</h3>
       <p>
-        Traditional approaches lacked comprehensive real-time tracking and situational awareness, leaving personnel 
-        vulnerable and decision-making delayed. The market required a robust solution capable of capturing essential 
-        data while being resilient enough for extreme conditions.
+        Crear una interfaz intuitiva y responsiva para el trading de criptomonedas que maneje datos 
+        en tiempo real, sea fácil de usar y proporcione herramientas avanzadas de análisis técnico.
       </p>
       
-      <h3 className="text-2xl font-semibold mb-4 mt-8">Solution</h3>
+      <h3 className="text-2xl font-semibold mb-4 mt-8">Solución Implementada</h3>
       <p>
-        WRLDS Technologies provided an end-to-end solution called the 6th SENSE, combining sophisticated AI-driven 
-        sensors seamlessly integrated into uniforms. The solution features:
+        Desarrollo de una aplicación web completa utilizando tecnologías modernas como React, TypeScript 
+        y Tailwind CSS. La plataforma incluye las siguientes características:
       </p>
       
       <div className="grid md:grid-cols-2 gap-6 my-8">
         <div className="bg-white shadow-md rounded-lg p-6 border border-gray-100 flex items-start">
-          <Shield className="h-6 w-6 text-black mr-3 flex-shrink-0 mt-1" />
+          <TrendingUp className="h-6 w-6 text-green-600 mr-3 flex-shrink-0 mt-1" />
           <div>
-            <h4 className="text-lg font-semibold mb-2 text-gray-700">Main Unit</h4>
-            <p>Secure real-time data transmission with encrypted communication.</p>
+            <h4 className="text-lg font-semibold mb-2 text-gray-700">Trading Dashboard</h4>
+            <p>Interfaz intuitiva con gráficos interactivos y datos de mercado en tiempo real.</p>
           </div>
         </div>
         
         <div className="bg-white shadow-md rounded-lg p-6 border border-gray-100 flex items-start">
-          <Radio className="h-6 w-6 text-black mr-3 flex-shrink-0 mt-1" />
+          <BarChart3 className="h-6 w-6 text-blue-600 mr-3 flex-shrink-0 mt-1" />
           <div>
-            <h4 className="text-lg font-semibold mb-2 text-gray-700">High-Quality Sensors</h4>
-            <p>Durable sensors resistant to dust, water, and extreme temperatures.</p>
+            <h4 className="text-lg font-semibold mb-2 text-gray-700">Análisis Técnico</h4>
+            <p>Herramientas avanzadas de charting y indicadores técnicos para análisis de mercado.</p>
           </div>
         </div>
         
         <div className="bg-white shadow-md rounded-lg p-6 border border-gray-100 flex items-start">
-          <Box className="h-6 w-6 text-black mr-3 flex-shrink-0 mt-1" />
+          <Wallet className="h-6 w-6 text-purple-600 mr-3 flex-shrink-0 mt-1" />
           <div>
-            <h4 className="text-lg font-semibold mb-2 text-gray-700">Integrated Clothing</h4>
-            <p>Customized shirts embedding AI-powered sensors, maintaining user comfort.</p>
+            <h4 className="text-lg font-semibold mb-2 text-gray-700">Portfolio Management</h4>
+            <p>Gestión completa de portfolio con tracking de ganancias y pérdidas.</p>
           </div>
         </div>
         
         <div className="bg-white shadow-md rounded-lg p-6 border border-gray-100 flex items-start">
-          <Activity className="h-6 w-6 text-black mr-3 flex-shrink-0 mt-1" />
+          <Shield className="h-6 w-6 text-red-600 mr-3 flex-shrink-0 mt-1" />
           <div>
-            <h4 className="text-lg font-semibold mb-2 text-gray-700">Control Unit</h4>
-            <p>Centralized AI interface providing transparent data visualization and management via an intuitive supervisor app.</p>
+            <h4 className="text-lg font-semibold mb-2 text-gray-700">Seguridad</h4>
+            <p>Implementación de mejores prácticas de seguridad y autenticación de usuarios.</p>
           </div>
         </div>
       </div>
       
-      <h4 className="text-xl font-semibold mb-4">Critical Features</h4>
+      <h4 className="text-xl font-semibold mb-4">Tecnologías Utilizadas</h4>
       <ul className="list-disc pl-6 space-y-2 mb-8">
-        <li>Man Down Alarm for immediate alerts</li>
-        <li>Precise GPS positioning for location tracking</li>
-        <li>Real-time monitoring of vital signs</li>
-        <li>Easily accessible Panic Button for emergencies</li>
+        <li><strong>Frontend:</strong> React 18, TypeScript, Tailwind CSS</li>
+        <li><strong>Gráficos:</strong> Chart.js / Recharts para visualización de datos</li>
+        <li><strong>Estado:</strong> Context API / Zustand para manejo de estado global</li>
+        <li><strong>Deployment:</strong> Vercel con CI/CD automático</li>
+        <li><strong>Responsive:</strong> Diseño mobile-first completamente adaptable</li>
       </ul>
       
-      <h3 className="text-2xl font-semibold mb-4 mt-8">Benefits</h3>
+      <h3 className="text-2xl font-semibold mb-4 mt-8">Características Destacadas</h3>
       <div className="space-y-6 mb-8">
         <div className="flex items-start">
-          <div className="flex-shrink-0 h-6 w-6 rounded-full bg-gray-100 flex items-center justify-center text-black mr-3 mt-1">✓</div>
+          <div className="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3 mt-1">✓</div>
           <div>
-            <h4 className="font-semibold">Life-saving technology</h4>
-            <p>Rapid data acquisition facilitates quicker responses in emergencies.</p>
+            <h4 className="font-semibold">Interfaz Moderna</h4>
+            <p>Diseño limpio y profesional con excelente UX/UI para traders.</p>
           </div>
         </div>
         
         <div className="flex items-start">
-          <div className="flex-shrink-0 h-6 w-6 rounded-full bg-gray-100 flex items-center justify-center text-black mr-3 mt-1">✓</div>
+          <div className="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3 mt-1">✓</div>
           <div>
-            <h4 className="font-semibold">Technological advancement</h4>
-            <p>Machine learning prevents false alarms by adapting to individual behavioral baselines.</p>
+            <h4 className="font-semibold">Responsive Design</h4>
+            <p>Funciona perfectamente en desktop, tablet y móvil con adaptación completa.</p>
           </div>
         </div>
         
         <div className="flex items-start">
-          <div className="flex-shrink-0 h-6 w-6 rounded-full bg-gray-100 flex items-center justify-center text-black mr-3 mt-1">✓</div>
+          <div className="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3 mt-1">✓</div>
           <div>
-            <h4 className="font-semibold">Long-lasting and secure</h4>
-            <p>Durable hardware with extended lifespan, robust encryption, and full GDPR compliance.</p>
+            <h4 className="font-semibold">Performance Optimizado</h4>
+            <p>Carga rápida y navegación fluida con optimizaciones de rendimiento.</p>
           </div>
         </div>
         
         <div className="flex items-start">
-          <div className="flex-shrink-0 h-6 w-6 rounded-full bg-gray-100 flex items-center justify-center text-black mr-3 mt-1">✓</div>
+          <div className="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3 mt-1">✓</div>
           <div>
-            <h4 className="font-semibold">Easy Maintenance</h4>
-            <p>Sensors are fully washable and require minimal maintenance.</p>
-          </div>
-        </div>
-        
-        <div className="flex items-start">
-          <div className="flex-shrink-0 h-6 w-6 rounded-full bg-gray-100 flex items-center justify-center text-black mr-3 mt-1">✓</div>
-          <div>
-            <h4 className="font-semibold">User-Friendly</h4>
-            <p>Plug & Play installation within minutes, providing hours of continuous operation per charge.</p>
+            <h4 className="font-semibold">Código Limpio</h4>
+            <p>Arquitectura escalable con componentes reutilizables y mejores prácticas.</p>
           </div>
         </div>
       </div>
       
-      <h3 className="text-2xl font-semibold mb-4 mt-8">Outcome</h3>
+      <h3 className="text-2xl font-semibold mb-4 mt-8">Resultados</h3>
       <p>
-        FireCat successfully implemented the 6th SENSE solution, significantly enhancing situational awareness, 
-        safety, and operational efficiency of high-risk personnel. WRLDS' innovative platform and specialized 
-        knowledge allowed for rapid deployment, immediate positive impact, and a scalable model for future expansions.
+        Proyecto completado exitosamente demostrando habilidades en desarrollo Full Stack. 
+        La aplicación muestra competencia en React, TypeScript, diseño responsive y 
+        deployment en producción. Disponible en vivo en Vercel con código fuente en GitHub.
       </p>
     </ProjectPageLayout>
   );
 };
 
-export default FireCatProject;
+export default CryptoProject;
