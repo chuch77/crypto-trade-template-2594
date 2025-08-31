@@ -44,7 +44,7 @@ const projects = [
     description: "Aplicación para seguimiento de criptomonedas con gráficos en tiempo real, portfolio personal y alertas de precios.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
     imageUrl: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop",
-    link: "#contact-info"
+    link: "https://crypto-trade-template-2594.vercel.app"
   },
   {
     id: 5,
