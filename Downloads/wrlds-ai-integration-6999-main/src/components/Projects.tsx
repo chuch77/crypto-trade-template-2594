@@ -43,16 +43,7 @@ const projects = [
     brand: "CryptoTrade",
     description: "Aplicación para seguimiento de criptomonedas con gráficos en tiempo real, portfolio personal y alertas de precios.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
-    images: [
-      "/screenshot%20crypto/Captura%20de%20Pantalla%202025-08-30%20a%20la(s)%2020.34.21.png",
-      "/screenshot%20crypto/Captura%20de%20Pantalla%202025-08-30%20a%20la(s)%2020.34.52.png",
-      "/screenshot%20crypto/Captura%20de%20Pantalla%202025-08-30%20a%20la(s)%2020.35.12.png",
-      "/screenshot%20crypto/Captura%20de%20Pantalla%202025-08-30%20a%20la(s)%2020.35.27.png",
-      "/screenshot%20crypto/Captura%20de%20Pantalla%202025-08-30%20a%20la(s)%2020.36.02.png",
-      "/screenshot%20crypto/Captura%20de%20Pantalla%202025-08-30%20a%20la(s)%2020.36.16.png",
-      "/screenshot%20crypto/Captura%20de%20Pantalla%202025-08-30%20a%20la(s)%2020.36.36.png"
-    ],
-    currentImageIndex: 0,
+    imageUrl: "/lovable-uploads/Captura de Pantalla 2025-08-30 a la(s) 20.36.02.png",
     link: "/projects/crypto"
   },
   {
@@ -68,7 +59,7 @@ const projects = [
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(0);
-  const [cryptoImageIndex, setCryptoImageIndex] = useState(0);
+
   const projectsRef = useRef<HTMLDivElement>(null);
   const carouselRef = useRef<HTMLDivElement>(null);
   const [isInView, setIsInView] = useState(false);
@@ -88,16 +79,7 @@ const Projects = () => {
     }
   }, [isInView, isHovering]);
   
-  // Carrusel de imágenes para el proyecto crypto
-  useEffect(() => {
-    const cryptoProject = projects.find(p => p.id === 4);
-    if (cryptoProject && cryptoProject.images) {
-      const interval = setInterval(() => {
-        setCryptoImageIndex(prev => (prev + 1) % cryptoProject.images.length);
-      }, 800);
-      return () => clearInterval(interval);
-    }
-  }, []);
+
   
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -190,7 +172,7 @@ const Projects = () => {
                   <div 
                     className="relative bg-black p-4 sm:p-6 flex items-center justify-center h-32 sm:h-40 md:h-48 overflow-hidden"
                     style={{
-                      backgroundImage: `url(${project.images ? project.images[cryptoImageIndex] : project.imageUrl})`,
+                      backgroundImage: `url(${project.imageUrl})`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center'
                     }}
