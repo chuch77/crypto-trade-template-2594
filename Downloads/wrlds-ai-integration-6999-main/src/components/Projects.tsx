@@ -43,7 +43,7 @@ const projects = [
     brand: "CryptoTrade",
     description: "Aplicación para seguimiento de criptomonedas con gráficos en tiempo real, portfolio personal y alertas de precios.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
-    imageUrl: "/lovable-uploads/Captura de Pantalla 2025-08-30 a la(s) 20.36.02.png",
+    imageUrl: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop",
     link: "/projects/crypto"
   },
   {
