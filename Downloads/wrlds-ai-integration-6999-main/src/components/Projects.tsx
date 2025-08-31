@@ -43,7 +43,16 @@ const projects = [
     brand: "CryptoTrade",
     description: "Aplicación para seguimiento de criptomonedas con gráficos en tiempo real, portfolio personal y alertas de precios.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
-    imageUrl: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop",
+    images: [
+      "/lovable-uploads/078a129e-0f98-4d91-af61-873687db1a04.png",
+      "/lovable-uploads/927dae7e-6aaf-4b76-add2-1287a1dd9dc0.png",
+      "/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png",
+      "/lovable-uploads/5262afdb-dd24-4d5e-be66-7c6717adbca9.png",
+      "/lovable-uploads/4187f423-ba69-4043-be76-c43098488348.png",
+      "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png",
+      "/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png"
+    ],
+    currentImageIndex: 0,
     link: "/projects/crypto"
   },
   {
@@ -59,6 +68,7 @@ const projects = [
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(0);
+  const [cryptoImageIndex, setCryptoImageIndex] = useState(0);
   const projectsRef = useRef<HTMLDivElement>(null);
   const carouselRef = useRef<HTMLDivElement>(null);
   const [isInView, setIsInView] = useState(false);
@@ -77,6 +87,17 @@ const Projects = () => {
       return () => clearInterval(interval);
     }
   }, [isInView, isHovering]);
+  
+  // Carrusel de imágenes para el proyecto crypto
+  useEffect(() => {
+    const cryptoProject = projects.find(p => p.id === 4);
+    if (cryptoProject && cryptoProject.images) {
+      const interval = setInterval(() => {
+        setCryptoImageIndex(prev => (prev + 1) % cryptoProject.images.length);
+      }, 3000);
+      return () => clearInterval(interval);
+    }
+  }, []);
   
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -169,7 +190,7 @@ const Projects = () => {
                   <div 
                     className="relative bg-black p-4 sm:p-6 flex items-center justify-center h-32 sm:h-40 md:h-48 overflow-hidden"
                     style={{
-                      backgroundImage: `url(${project.imageUrl})`,
+                      backgroundImage: `url(${project.images ? project.images[cryptoImageIndex] : project.imageUrl})`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center'
                     }}
