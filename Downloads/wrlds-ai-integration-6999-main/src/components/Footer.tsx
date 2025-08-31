@@ -110,6 +110,10 @@ const Footer = () => {
               <li><span className="text-gray-300">Desarrollo Web</span></li>
               <li><span className="text-gray-300">E-commerce</span></li>
               <li><span className="text-gray-300">APIs & Backend</span></li>
+              <li><span className="text-gray-300">Aplicaciones React</span></li>
+              <li><span className="text-gray-300">Bases de Datos</span></li>
+              <li><span className="text-gray-300">Deployment & DevOps</span></li>
+              <li><span className="text-gray-300">Mantenimiento Web</span></li>
               <li><span className="text-gray-300">Consultoría Técnica</span></li>
             </ul>
           </div>
