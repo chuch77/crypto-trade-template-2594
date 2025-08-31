@@ -102,25 +102,9 @@ const Navbar = () => {
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                    Links
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid gap-3 p-4 w-[300px]">
-                      <li>
-                        <a href="https://github.com/jesuseliud" target="_blank" rel="noopener noreferrer" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">GitHub</div>
-                          <p className="text-sm text-gray-500">Repositorios y código fuente</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://linkedin.com/in/jesus-eliud-soto-mendez" target="_blank" rel="noopener noreferrer" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">LinkedIn</div>
-                          <p className="text-sm text-gray-500">Perfil profesional</p>
-                        </a>
-                      </li>
-                    </ul>
-                  </NavigationMenuContent>
+                  <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                    <Link to="/links">Links</Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
