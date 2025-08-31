@@ -90,31 +90,9 @@ const Navbar = () => {
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                  <button onClick={() => scrollToSection('features')} className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                     Servicios
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid gap-3 p-4 w-[400px]">
-                      <li>
-                        <div className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Desarrollo Web</div>
-                          <p className="text-sm text-gray-500">Aplicaciones web completas con React y Node.js</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">E-commerce</div>
-                          <p className="text-sm text-gray-500">Tiendas online con sistemas de pago integrados</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">APIs & Backend</div>
-                          <p className="text-sm text-gray-500">APIs REST, bases de datos y arquitectura escalable</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </NavigationMenuContent>
+                  </button>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
