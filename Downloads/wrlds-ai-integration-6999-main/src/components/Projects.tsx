@@ -139,7 +139,7 @@ const Projects = () => {
             Mis Proyectos de E-commerce
           </h2>
           <p className="text-gray-600">
-            Explora los 5 proyectos de comercio electrónico que he desarrollado, cada uno con tecnologías modernas y funcionalidades completas.
+            Explora los proyectos web que he desarrollado, desde e-commerce hasta plataformas fintech, cada uno con tecnologías modernas y funcionalidades completas.
           </p>
           {isMobile && (
             <div className="flex items-center justify-center mt-4 animate-pulse-slow">
