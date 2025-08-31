@@ -8,7 +8,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { useState } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import CryptoProject from "./pages/FireCatProject";
+
 import SportRetailProject from "./pages/SportRetailProject";
 import WorkwearProject from "./pages/WorkwearProject";
 import HockeyProject from "./pages/HockeyProject";
@@ -33,7 +33,7 @@ const App = () => {
           <BrowserRouter>
             <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/projects/crypto" element={<CryptoProject />} />
+
             <Route path="/projects/sport-retail" element={<SportRetailProject />} />
             <Route path="/projects/workwear" element={<WorkwearProject />} />
             <Route path="/projects/hockey" element={<HockeyProject />} />
