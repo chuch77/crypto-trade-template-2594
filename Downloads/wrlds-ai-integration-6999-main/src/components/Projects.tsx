@@ -42,9 +42,9 @@ const projects = [
     title: "Plataforma Crypto",
     brand: "CryptoTrade",
     description: "Aplicación para seguimiento de criptomonedas con gráficos en tiempo real, portfolio personal y alertas de precios.",
-    tags: ["React", "Chart.js", "WebSocket", "CoinGecko API"],
+    tags: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
     imageUrl: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop",
-    link: "/projects/crypto-platform"
+    link: "/projects/crypto"
   },
   {
     id: 5,
