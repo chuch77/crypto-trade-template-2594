@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useIsMobile } from "@/hooks/use-mobile";
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const projects = [
   {
@@ -58,6 +59,7 @@ const projects = [
 ];
 
 const Projects = () => {
+  const { t } = useLanguage();
   const [activeProject, setActiveProject] = useState(0);
 
   const projectsRef = useRef<HTMLDivElement>(null);
@@ -136,10 +138,10 @@ const Projects = () => {
             Portfolio de Proyectos
           </div>
           <h2 className="text-3xl font-bold mb-3">
-            Mis Proyectos de E-commerce
+            {t('projects.title')}
           </h2>
           <p className="text-gray-600">
-            Explora los proyectos web que he desarrollado, desde e-commerce hasta plataformas fintech, cada uno con tecnologías modernas y funcionalidades completas.
+            {t('projects.subtitle')}
           </p>
           {isMobile && (
             <div className="flex items-center justify-center mt-4 animate-pulse-slow">
@@ -217,7 +219,7 @@ const Projects = () => {
                           }
                         }}
                       >
-                        <span className="relative z-10">Learn more</span>
+                        <span className="relative z-10">{t('projects.learnMore')}</span>
                         <ArrowRight className="ml-2 w-4 h-4 relative z-10 transition-transform group-hover:translate-x-1" />
                         <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full"></span>
                       </Link>

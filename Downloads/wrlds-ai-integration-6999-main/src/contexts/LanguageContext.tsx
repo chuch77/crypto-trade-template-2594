@@ -17,7 +17,13 @@ const translations = {
     'hero.title': 'Desarrollador Full Stack Junior',
     'hero.subtitle': 'Graduado hace 2 meses con 5 proyectos de e-commerce desarrollados y pasión por crear soluciones web innovadoras.',
     'hero.viewProjects': 'Ver Proyectos',
-    'hero.contact': 'Contáctame'
+    'hero.contact': 'Contáctame',
+    'hero.frontend': 'React, TypeScript, Tailwind CSS para crear interfaces modernas y responsivas.',
+    'hero.backend': 'Node.js, Express, bases de datos para crear APIs robustas y escalables.',
+    'hero.ecommerce': 'Experiencia en tiendas online, sistemas de pago y gestión de inventarios.',
+    'projects.title': 'Mis Proyectos de E-commerce',
+    'projects.subtitle': 'Explora los proyectos web que he desarrollado, desde e-commerce hasta plataformas fintech, cada uno con tecnologías modernas y funcionalidades completas.',
+    'projects.learnMore': 'Learn more'
   },
   en: {
     'nav.home': 'Home',
@@ -27,7 +33,13 @@ const translations = {
     'hero.title': 'Junior Full Stack Developer',
     'hero.subtitle': 'Graduated 2 months ago with 5 e-commerce projects developed and passion for creating innovative web solutions.',
     'hero.viewProjects': 'View Projects',
-    'hero.contact': 'Contact Me'
+    'hero.contact': 'Contact Me',
+    'hero.frontend': 'React, TypeScript, Tailwind CSS to create modern and responsive interfaces.',
+    'hero.backend': 'Node.js, Express, databases to create robust and scalable APIs.',
+    'hero.ecommerce': 'Experience in online stores, payment systems and inventory management.',
+    'projects.title': 'My Web Projects',
+    'projects.subtitle': 'Explore the web projects I have developed, from e-commerce to fintech platforms, each with modern technologies and complete functionalities.',
+    'projects.learnMore': 'Learn more'
   },
   fr: {
     'nav.home': 'Accueil',

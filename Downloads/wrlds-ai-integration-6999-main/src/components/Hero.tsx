@@ -130,7 +130,7 @@ const Hero = () => {
               <Cpu className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
             </div>
             <h3 className="text-sm sm:text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Frontend Development</h3>
-            <p className="text-gray-600 text-xs sm:text-sm">React, TypeScript, Tailwind CSS para crear interfaces modernas y responsivas.</p>
+            <p className="text-gray-600 text-xs sm:text-sm">{t('hero.frontend')}</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
@@ -138,7 +138,7 @@ const Hero = () => {
               <Code className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
             </div>
             <h3 className="text-sm sm:text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Backend Development</h3>
-            <p className="text-gray-600 text-xs sm:text-sm">Node.js, Express, bases de datos para crear APIs robustas y escalables.</p>
+            <p className="text-gray-600 text-xs sm:text-sm">{t('hero.backend')}</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
@@ -146,7 +146,7 @@ const Hero = () => {
               <Layers className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
             </div>
             <h3 className="text-sm sm:text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">E-commerce Specialist</h3>
-            <p className="text-gray-600 text-xs sm:text-sm">Experiencia en tiendas online, sistemas de pago y gestión de inventarios.</p>
+            <p className="text-gray-600 text-xs sm:text-sm">{t('hero.ecommerce')}</p>
           </motion.div>
         </motion.div>
       </div>
