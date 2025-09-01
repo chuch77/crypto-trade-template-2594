@@ -112,53 +112,53 @@ const Features = () => {
 
   const sensorCaseStudies = [{
     image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=600&fit=crop",
-    title: "React & TypeScript",
-    description: "Desarrollo de aplicaciones web modernas con React, TypeScript y hooks para crear interfaces dinámicas y mantenibles."
+    title: t('tech.react.title'),
+    description: t('tech.react.desc')
   }, {
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
-    title: "Node.js & Express",
-    description: "Creación de APIs REST y GraphQL con Node.js, Express y middleware personalizado para aplicaciones escalables."
+    title: t('tech.node.title'),
+    description: t('tech.node.desc')
   }, {
     image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800&h=600&fit=crop",
-    title: "Bases de Datos",
-    description: "Experiencia con MongoDB, PostgreSQL y MySQL para diseño de esquemas y optimización de consultas."
+    title: t('tech.db.title'),
+    description: t('tech.db.desc')
   }, {
     image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&h=600&fit=crop",
-    title: "DevOps & Deploy",
-    description: "Deployment en AWS, Docker, CI/CD con GitHub Actions para automatización y escalabilidad."
+    title: t('tech.devops.title'),
+    description: t('tech.devops.desc')
   }, {
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    title: "Testing & QA",
-    description: "Jest, Cypress, testing unitario e integración para garantizar calidad del código."
+    title: t('tech.testing.title'),
+    description: t('tech.testing.desc')
   }, {
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    title: "Analytics & SEO",
-    description: "Google Analytics, SEO optimization y performance monitoring para mejores resultados."
+    title: t('tech.analytics.title'),
+    description: t('tech.analytics.desc')
   }];
   const stepFlowItems = [{
     icon: <Microchip className="h-10 w-10 text-gray-700" />,
-    title: "Planificación y Diseño",
-    description: "Análisis de requerimientos y diseño de arquitectura escalable"
+    title: t('methodology.planning.title'),
+    description: t('methodology.planning.desc')
   }, {
     icon: <Factory className="h-10 w-10 text-gray-700" />,
-    title: "Desarrollo Ágil",
-    description: "Implementación iterativa con metodologías ágiles y buenas prácticas"
+    title: t('methodology.agile.title'),
+    description: t('methodology.agile.desc')
   }, {
     icon: <Handshake className="h-10 w-10 text-gray-700" />,
-    title: "Testing y Deploy",
-    description: "Pruebas exhaustivas y despliegue en producción con CI/CD"
+    title: t('methodology.testing.title'),
+    description: t('methodology.testing.desc')
   }];
   const sprintPhases = [{
-    name: "Planificación",
+    name: t('methodology.phases.planning'),
     icon: <CheckCircle className="h-4 w-4" />
   }, {
-    name: "Desarrollo",
+    name: t('methodology.phases.development'),
     icon: <Code className="h-4 w-4" />
   }, {
-    name: "Testing",
+    name: t('methodology.phases.testing'),
     icon: <Box className="h-4 w-4" />
   }, {
-    name: "Revisión",
+    name: t('methodology.phases.review'),
     icon: <RefreshCcw className="h-4 w-4" />
   }];
 
@@ -297,7 +297,7 @@ const Features = () => {
               <h3 className="text-2xl font-bold">{t('whywrlds.subtitle')}</h3>
               <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
                 {t('whywrlds.description')}
-                <span className="block text-sm mt-1 text-blue-500">Desliza horizontalmente para ver más ejemplos →</span>
+                <span className="block text-sm mt-1 text-blue-500">{t('tech.swipe')}</span>
               </p>
             </div>
             
@@ -348,10 +348,9 @@ const Features = () => {
             <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
               Mi Metodología
             </div>
-            <h2 className="text-3xl font-bold mb-4">Cómo trabajo en mis proyectos</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('methodology.title')}</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Utilizo metodologías ágiles y las mejores prácticas de desarrollo para crear aplicaciones web robustas, 
-              escalables y mantenibles con tecnologías modernas.
+              {t('methodology.subtitle')}
             </p>
           </div>
           
@@ -402,15 +401,15 @@ const Features = () => {
               <div className="max-w-3xl mx-auto">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
                   <div className="flex items-center">
-                    <h3 className="text-xl font-bold">Proyecto de Desarrollo</h3>
+                    <h3 className="text-xl font-bold">{t('methodology.project.title')}</h3>
                   </div>
                   <div className="flex items-center">
-                    <span className="text-sm text-gray-500 mr-2">Desarrollo Iterativo</span>
+                    <span className="text-sm text-gray-500 mr-2">{t('methodology.iterative.title')}</span>
                     <RefreshCcw className="h-5 w-5 text-gray-600 animate-rotate-slow" />
                   </div>
                 </div>
                 
-                <p className="text-gray-600 mb-4">Trabajo de forma iterativa para entregar valor continuo y adaptarme a los cambios</p>
+                <p className="text-gray-600 mb-4">{t('methodology.iterative.desc')}</p>
                 
                 <div className="relative mb-2">
                   <Progress value={progressValue} className="h-3 bg-gray-200" />
@@ -432,10 +431,10 @@ const Features = () => {
                     <div className="bg-green-100 rounded-full p-1 mr-2 shrink-0">
                       <CheckCircle className="h-4 w-4 text-green-600" />
                     </div>
-                    <span className="text-sm text-gray-600">Feedback continuo integrado en cada etapa</span>
+                    <span className="text-sm text-gray-600">{t('methodology.feedback')}</span>
                   </div>
                   <div className="text-sm text-gray-500 flex items-center mt-2 sm:mt-0">
-                    <span className="mr-2">Mejora continua</span>
+                    <span className="mr-2">{t('methodology.improvement')}</span>
                     <div className="flex space-x-1">
                       <span className="inline-block w-2 h-2 bg-gray-300 rounded-full animate-pulse"></span>
                       <span className="inline-block w-2 h-2 bg-gray-400 rounded-full animate-pulse animation-delay-200"></span>
@@ -470,8 +469,8 @@ const Features = () => {
                   <Rocket className="h-10 w-10 text-gray-700" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-2">Listo para Producir</h3>
-              <p className="text-gray-700">Preparado para escalar, optimizar y lanzar</p>
+              <h3 className="text-xl font-bold mb-2">{t('methodology.ready.title')}</h3>
+              <p className="text-gray-700">{t('methodology.ready.desc')}</p>
               <div className="flex justify-center mt-4 space-x-2">
                 <span className="inline-block w-3 h-3 rounded-full bg-gray-300 animate-pulse"></span>
                 <span className="inline-block w-3 h-3 rounded-full bg-gray-500 animate-pulse animation-delay-200"></span>
