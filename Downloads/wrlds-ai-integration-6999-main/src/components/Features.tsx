@@ -11,8 +11,10 @@ import { Progress } from "@/components/ui/progress";
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Button } from "@/components/ui/button";
 import { useScrollHijack } from '@/hooks/useScrollHijack';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Features = () => {
+  const { t } = useLanguage();
   const featuresRef = useRef<HTMLDivElement>(null);
   const hijackSectionRef = useRef<HTMLDivElement>(null);
   const [hoveredFeature, setHoveredFeature] = useState<number | null>(null);
@@ -24,26 +26,26 @@ const Features = () => {
   const features = [
     {
       icon: <Activity className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Frontend Development",
-      description: "Desarrollo de interfaces modernas y responsivas con React, TypeScript, Tailwind CSS y Next.js para crear experiencias de usuario excepcionales.",
+      title: t('features.frontend.title'),
+      description: t('features.frontend.desc'),
       image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=600&fit=crop"
     },
     {
       icon: <Shield className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Backend Development",
-      description: "Creación de APIs robustas y escalables con Node.js, Express, bases de datos SQL y NoSQL para aplicaciones web completas.",
+      title: t('features.backend.title'),
+      description: t('features.backend.desc'),
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop"
     },
     {
       icon: <HardHat className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "E-commerce Solutions",
-      description: "Especialización en desarrollo de tiendas online con sistemas de pago, gestión de inventarios y paneles de administración.",
+      title: t('features.ecommerce.title'),
+      description: t('features.ecommerce.desc'),
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop"
     },
     {
       icon: <Zap className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Full Stack Integration",
-      description: "Integración completa de frontend y backend, deployment en la nube y optimización de rendimiento para aplicaciones escalables.",
+      title: t('features.fullstack.title'),
+      description: t('features.fullstack.desc'),
       image: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=800&h=600&fit=crop"
     }
   ];
@@ -168,7 +170,7 @@ const Features = () => {
               Habilidades Técnicas
             </div>
             <p className="text-gray-600 mt-4">
-              Como desarrollador full stack junior, domino tecnologías modernas para crear aplicaciones web completas, desde el frontend hasta el backend y bases de datos.
+              {t('features.title')}
             </p>
           </div>
           
@@ -292,10 +294,9 @@ const Features = () => {
               <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
                 Stack Tecnológico
               </div>
-              <h3 className="text-2xl font-bold">Tecnologías que Domino</h3>
+              <h3 className="text-2xl font-bold">{t('whywrlds.subtitle')}</h3>
               <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-                Explora las principales tecnologías que utilizo en mis proyectos, 
-                desde frameworks frontend hasta bases de datos y herramientas de desarrollo.
+                {t('whywrlds.description')}
                 <span className="block text-sm mt-1 text-blue-500">Desliza horizontalmente para ver más ejemplos →</span>
               </p>
             </div>
