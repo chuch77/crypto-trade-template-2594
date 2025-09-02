@@ -10,7 +10,7 @@ const Pricing = () => {
     {
       name: "Básico",
       nameEn: "Basic",
-      price: "$499",
+      price: "$150",
       period: "/proyecto",
       periodEn: "/project",
       description: "Perfecto para proyectos pequeños",
@@ -37,7 +37,7 @@ const Pricing = () => {
     {
       name: "Profesional",
       nameEn: "Professional", 
-      price: "$899",
+      price: "$350",
       period: "/proyecto",
       periodEn: "/project",
       description: "Ideal para negocios en crecimiento",
@@ -66,7 +66,7 @@ const Pricing = () => {
     {
       name: "E-commerce",
       nameEn: "E-commerce",
-      price: "$1,299",
+      price: "$650",
       period: "/proyecto", 
       periodEn: "/project",
       description: "Tienda online completa",
