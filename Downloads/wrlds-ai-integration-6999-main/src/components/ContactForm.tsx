@@ -119,7 +119,7 @@ const ContactForm = () => {
       
       // More detailed error logging
       if (error && typeof error === 'object' && 'text' in error) {
-        console.error('Error details:', (error as any).text);
+        console.error('Error details:', (error as { text: string }).text);
       }
       
       toast({
@@ -223,11 +223,8 @@ const ContactForm = () => {
               <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white mb-4">
                 <Mail className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Email Us</h3>
-              <p className="text-gray-600 mb-2">For general inquiries:</p>
-              <a href="mailto:info@wrlds.com" className="text-blue-500 hover:underline">hello@wrlds.com</a>
-              <p className="text-gray-600 mt-2 mb-2">
-            </p>
+              <h3 className="text-xl font-semibold mb-2">Email</h3>
+              <a href="mailto:chuchdios7@gmail.com" className="text-blue-500 hover:underline text-lg">chuchdios7@gmail.com</a>
             </div>
           </div>
         </div>
