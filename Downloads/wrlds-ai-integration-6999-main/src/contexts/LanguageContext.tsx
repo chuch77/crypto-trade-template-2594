@@ -105,7 +105,13 @@ const translations = {
     'project.crypto.desc': 'Aplicación para seguimiento de criptomonedas con gráficos en tiempo real, portfolio personal y alertas de precios.',
     'project.tech.title': 'E-commerce Electrónicos',
     'project.tech.brand': 'TechStore',
-    'project.tech.desc': 'Tienda online de productos electrónicos con comparador de precios, especificaciones técnicas y sistema de garantías.'
+    'project.tech.desc': 'Tienda online de productos electrónicos con comparador de precios, especificaciones técnicas y sistema de garantías.',
+    'pricing.title': 'Planes y Precios',
+    'pricing.subtitle': 'Elige el plan que mejor se adapte a tu proyecto. Todos incluyen código limpio, diseño responsive y soporte post-entrega.',
+    'pricing.popular': 'Más Popular',
+    'pricing.start': 'Comenzar Proyecto',
+    'pricing.custom': '¿Necesitas algo personalizado?',
+    'pricing.quote': 'Solicitar Cotización Personalizada'
   },
   en: {
     'nav.home': 'Home',
@@ -203,7 +209,13 @@ const translations = {
     'project.crypto.desc': 'Application for cryptocurrency tracking with real-time charts, personal portfolio and price alerts.',
     'project.tech.title': 'Electronics E-commerce',
     'project.tech.brand': 'TechStore',
-    'project.tech.desc': 'Online store for electronic products with price comparator, technical specifications and warranty system.'
+    'project.tech.desc': 'Online store for electronic products with price comparator, technical specifications and warranty system.',
+    'pricing.title': 'Plans and Pricing',
+    'pricing.subtitle': 'Choose the plan that best fits your project. All include clean code, responsive design and post-delivery support.',
+    'pricing.popular': 'Most Popular',
+    'pricing.start': 'Start Project',
+    'pricing.custom': 'Need something custom?',
+    'pricing.quote': 'Request Custom Quote'
   },
   fr: {
     'nav.home': 'Accueil',

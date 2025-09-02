@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import Projects from '@/components/Projects';
 import WhyWrlds from '@/components/WhyWrlds';
+import Pricing from '@/components/Pricing';
 import SEO from '@/components/SEO';
 import { useEffect } from 'react';
 
@@ -29,6 +30,7 @@ const Index = () => {
       <Features />
       <WhyWrlds />
       <Projects />
+      <Pricing />
     </PageLayout>
   );
 };
