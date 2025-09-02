@@ -18,7 +18,6 @@ import DevelopmentProcess from "./pages/DevelopmentProcess";
 import About from "./pages/About";
 import Links from "./pages/Links";
 import Services from "./pages/Services";
-import TechDetails from "./pages/TechDetails";
 import Careers from "./pages/Careers";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Blog from "./pages/Blog";
