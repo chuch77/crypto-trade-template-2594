@@ -18,7 +18,7 @@ const Services = () => {
       titleEn: "Frontend Development",
       description: "Interfaces modernas y responsivas con React, TypeScript y Tailwind CSS",
       descriptionEn: "Modern and responsive interfaces with React, TypeScript and Tailwind CSS",
-      price: "$20/hora",
+      price: "$15/hora",
       icon: <Code className="w-8 h-8" />,
       technologies: ["React", "TypeScript", "Tailwind CSS", "Next.js", "HTML5", "CSS3"]
     },
@@ -28,7 +28,7 @@ const Services = () => {
       titleEn: "Backend Development", 
       description: "APIs robustas y escalables con Node.js, Express y bases de datos",
       descriptionEn: "Robust and scalable APIs with Node.js, Express and databases",
-      price: "$25/hora",
+      price: "$20/hora",
       icon: <Database className="w-8 h-8" />,
       technologies: ["Node.js", "Express", "MongoDB", "PostgreSQL", "MySQL", "JWT"]
     },
@@ -38,7 +38,7 @@ const Services = () => {
       titleEn: "Full Stack Development",
       description: "Aplicaciones web completas desde el frontend hasta el backend",
       descriptionEn: "Complete web applications from frontend to backend",
-      price: "$30/hora",
+      price: "$25/hora",
       icon: <Globe className="w-8 h-8" />,
       technologies: ["MERN Stack", "PERN Stack", "REST APIs", "GraphQL", "WebSockets", "Docker"]
     },
@@ -48,7 +48,7 @@ const Services = () => {
       titleEn: "E-commerce",
       description: "Tiendas online completas con sistemas de pago y gestión de inventario",
       descriptionEn: "Complete online stores with payment systems and inventory management",
-      price: "$35/hora",
+      price: "$25/hora",
       icon: <ShoppingCart className="w-8 h-8" />,
       technologies: ["Stripe", "PayPal", "WooCommerce", "Shopify", "Cart Systems", "Payment Gateways"]
     },
@@ -58,7 +58,7 @@ const Services = () => {
       titleEn: "Mobile Applications",
       description: "Apps móviles híbridas con React Native y tecnologías modernas",
       descriptionEn: "Hybrid mobile apps with React Native and modern technologies",
-      price: "$28/hora",
+      price: "$20/hora",
       icon: <Smartphone className="w-8 h-8" />,
       technologies: ["React Native", "Expo", "Firebase", "AsyncStorage", "Push Notifications", "App Store"]
     },
@@ -68,7 +68,7 @@ const Services = () => {
       titleEn: "Optimization & Performance",
       description: "Mejora de velocidad, SEO y experiencia de usuario",
       descriptionEn: "Speed improvement, SEO and user experience optimization",
-      price: "$22/hora",
+      price: "$15/hora",
       icon: <Zap className="w-8 h-8" />,
       technologies: ["Lighthouse", "Core Web Vitals", "SEO", "Performance", "Caching", "CDN"]
     }
