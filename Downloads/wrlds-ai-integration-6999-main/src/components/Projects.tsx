@@ -19,7 +19,7 @@ const Projects = () => {
     tags: ["React", "Node.js", "MongoDB", "Stripe"],
     imageUrl: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
     isFeatured: true,
-    link: "/projects/fashion-store",
+    link: "/links",
     details: `
       Tienda de ropa online con funcionalidades completas de e-commerce. Incluye catálogo de productos con filtros, carrito de compras, sistema de pagos con Stripe, gestión de usuarios y panel de administración para inventario.
     `
@@ -31,7 +31,7 @@ const Projects = () => {
     description: t('project.gym.desc'),
     tags: ["E-commerce", "React", "Express", "PayPal"],
     imageUrl: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
-    link: "/projects/gym-supplements"
+    link: "/links"
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const Projects = () => {
     description: t('project.bookstore.desc'),
     tags: ["TypeScript", "Next.js", "PostgreSQL", "Cloudinary"],
     imageUrl: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=600&fit=crop",
-    link: "/projects/bookstore"
+    link: "/links"
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ const Projects = () => {
     description: t('project.tech.desc'),
     tags: ["Vue.js", "Laravel", "MySQL", "Redis"],
     imageUrl: "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=800&h=600&fit=crop",
-    link: "/projects/electronics-store"
+    link: "/links"
   }
 ];
 
