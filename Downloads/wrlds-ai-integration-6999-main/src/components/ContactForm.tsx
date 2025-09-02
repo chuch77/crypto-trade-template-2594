@@ -28,7 +28,6 @@ const EMAILJS_PUBLIC_KEY = "wQmcZvoOqTAhGnRZ3";
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formStartTime] = useState<number>(Date.now()); // Track when form was opened
   
   const { toast } = useToast();
   
@@ -39,7 +38,7 @@ const ContactForm = () => {
       email: '',
       message: '',
       honeypot: '',
-      timestamp: formStartTime
+      timestamp: Date.now()
     }
   });
 
@@ -72,8 +71,6 @@ const ContactForm = () => {
         return;
       }
       
-      console.log('Form submitted:', data);
-      
       // Remove honeypot and timestamp fields before sending
       const { honeypot, timestamp, ...emailData } = data;
       
@@ -82,14 +79,9 @@ const ContactForm = () => {
         from_name: emailData.name,
         from_email: emailData.email,
         message: emailData.message,
-        to_name: 'WRLDS Team', // Adding recipient name parameter
-        reply_to: emailData.email // Keeping reply_to for compatibility
+        to_name: 'WRLDS Team',
+        reply_to: emailData.email
       };
-      
-      console.log('Sending email with params:', templateParams);
-      console.log('Using service:', EMAILJS_SERVICE_ID);
-      console.log('Using template:', EMAILJS_TEMPLATE_ID);
-      console.log('Using public key:', EMAILJS_PUBLIC_KEY);
       
       // Send email directly without initializing, as it's not needed with the send method that includes the key
       const response = await emailjs.send(
@@ -99,7 +91,7 @@ const ContactForm = () => {
         EMAILJS_PUBLIC_KEY // Re-adding the public key parameter
       );
       
-      console.log('Email sent successfully:', response);
+      // Email sent successfully
       
       toast({
         title: "Message sent!",

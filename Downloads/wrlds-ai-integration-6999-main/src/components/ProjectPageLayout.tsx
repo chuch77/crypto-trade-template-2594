@@ -10,7 +10,6 @@ interface ProjectPageLayoutProps {
   title: string;
   subtitle: string;
   imageUrl: string;
-  brandName: string;
   darkMode?: boolean;
 }
 
@@ -19,7 +18,6 @@ const ProjectPageLayout: React.FC<ProjectPageLayoutProps> = ({
   title,
   subtitle,
   imageUrl,
-  brandName,
   darkMode = false
 }) => {
   // Ensure page scrolls to top when component mounts

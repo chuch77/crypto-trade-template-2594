@@ -5,10 +5,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import { useState } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-
 import SportRetailProject from "./pages/SportRetailProject";
 import WorkwearProject from "./pages/WorkwearProject";
 import HockeyProject from "./pages/HockeyProject";
@@ -23,8 +21,10 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Blog from "./pages/Blog";
 import BlogPostDetail from "./pages/BlogPostDetail";
 
+// Create QueryClient outside component to prevent recreation
+const queryClient = new QueryClient();
+
 const App = () => {
-  const [queryClient] = useState(() => new QueryClient());
 
   return (
     <QueryClientProvider client={queryClient}>

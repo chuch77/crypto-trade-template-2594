@@ -2,7 +2,7 @@
 import ProjectPageLayout from '@/components/ProjectPageLayout';
 import { TrendingUp, BarChart3, Wallet, Shield } from 'lucide-react';
 
-const CryptoProject = () => {
+const FireCatProject = () => {
   return (
     <ProjectPageLayout
       title="Crypto Trading Platform"
@@ -143,4 +143,4 @@ const CryptoProject = () => {
   );
 };
 
-export default CryptoProject;
+export default FireCatProject;
