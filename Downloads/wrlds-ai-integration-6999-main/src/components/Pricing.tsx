@@ -13,8 +13,8 @@ const Pricing = () => {
       price: "$15",
       period: "/hora",
       periodEn: "/hour",
-      description: "Perfecto para proyectos pequeños",
-      descriptionEn: "Perfect for small projects",
+      description: "Perfecto para proyectos pequeños (Mínimo 10 horas)",
+      descriptionEn: "Perfect for small projects (10 hours minimum)",
       icon: <Star className="w-6 h-6" />,
       features: [
         "Landing Page Responsiva",
@@ -40,8 +40,8 @@ const Pricing = () => {
       price: "$20",
       period: "/hora",
       periodEn: "/hour",
-      description: "Ideal para negocios en crecimiento",
-      descriptionEn: "Ideal for growing businesses",
+      description: "Ideal para negocios en crecimiento (Mínimo 20 horas)",
+      descriptionEn: "Ideal for growing businesses (20 hours minimum)",
       icon: <Zap className="w-6 h-6" />,
       features: [
         "Sitio web completo (hasta 10 páginas)",
@@ -69,8 +69,8 @@ const Pricing = () => {
       price: "$25",
       period: "/hora", 
       periodEn: "/hour",
-      description: "Tienda online completa",
-      descriptionEn: "Complete online store",
+      description: "Tienda online completa (Mínimo 30 horas)",
+      descriptionEn: "Complete online store (30 hours minimum)",
       icon: <Crown className="w-6 h-6" />,
       features: [
         "Tienda online completa",
