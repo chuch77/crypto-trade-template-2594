@@ -18,6 +18,7 @@ import DevelopmentProcess from "./pages/DevelopmentProcess";
 import About from "./pages/About";
 import Links from "./pages/Links";
 import Services from "./pages/Services";
+import TechDetails from "./pages/TechDetails";
 import Careers from "./pages/Careers";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Blog from "./pages/Blog";
@@ -45,6 +46,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/links" element={<Links />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/tech-details" element={<TechDetails />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/blog" element={<Blog />} />
