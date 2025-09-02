@@ -12,7 +12,7 @@ const translations = {
   es: {
     'nav.home': 'Inicio',
     'nav.about': 'Sobre Mí',
-    'nav.projects': 'Proyectos',
+    'nav.services': 'Servicios',
     'nav.contact': 'Contacto',
     'hero.title': 'Desarrollador Full Stack',
     'hero.subtitle': 'Transformo ideas en aplicaciones web exitosas. Especialista en crear experiencias digitales que impulsan negocios y conectan con usuarios reales.',
@@ -119,7 +119,7 @@ const translations = {
   en: {
     'nav.home': 'Home',
     'nav.about': 'About Me',
-    'nav.projects': 'Projects',
+    'nav.services': 'Services',
     'nav.contact': 'Contact',
     'hero.title': 'Full Stack Developer',
     'hero.subtitle': 'I transform ideas into successful web applications. Specialist in creating digital experiences that drive businesses and connect with real users.',

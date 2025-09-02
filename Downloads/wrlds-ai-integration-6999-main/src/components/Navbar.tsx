@@ -79,14 +79,8 @@ const Navbar = () => {
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <button onClick={() => scrollToSection('projects')} className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                    {t('nav.projects')}
-                  </button>
-                </NavigationMenuItem>
-                
-                <NavigationMenuItem>
                   <button onClick={() => scrollToSection('features')} className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                    Servicios
+                    {t('nav.services')}
                   </button>
                 </NavigationMenuItem>
                 
