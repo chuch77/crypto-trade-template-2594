@@ -3,6 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { Layers, BarChart, AlertTriangle, Clock4, Rocket, Zap, Sparkles, ArrowRight, Award, Target, Shield, ChartBar } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Link } from "react-router-dom";
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const AnimatedCounter = ({
   end,
@@ -52,6 +53,7 @@ const AnimatedCounter = ({
 };
 
 const WhyWrlds = () => {
+  const { t } = useLanguage();
   const isMobile = useIsMobile();
   const containerVariants = {
     hidden: {
@@ -86,10 +88,10 @@ const WhyWrlds = () => {
         margin: "-100px"
       }} variants={containerVariants}>
           <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
-            Sobre Mí
+            {t('about.title')}
           </motion.h2>
           <motion.p variants={itemVariants} className="text-gray-600 text-lg max-w-3xl mx-auto">
-            Desarrollador Full Stack Junior apasionado por crear soluciones web innovadoras y escalables
+            {t('about.subtitle')}
           </motion.p>
         </motion.div>
         
@@ -102,9 +104,9 @@ const WhyWrlds = () => {
               <Award className="w-8 h-8 text-gray-700" />
             </div>
             <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={2} suffix=" meses" />
+              <AnimatedCounter end={2} suffix={` ${t('about.months').split(' ')[1]}`} />
             </h3>
-            <p className="text-gray-700">Graduado como desarrollador full stack, listo para aportar valor desde el primer día</p>
+            <p className="text-gray-700">{t('about.months.desc')}</p>
           </motion.div>
           
           <motion.div variants={itemVariants} className="bg-gray-100 p-6 rounded-xl border border-gray-200 text-center hover:bg-gray-200 transition-all">
@@ -112,10 +114,10 @@ const WhyWrlds = () => {
               <Target className="w-8 h-8 text-gray-700" />
             </div>
             <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={5} suffix=" proyectos" /> 
+              <AnimatedCounter end={5} suffix={` ${t('about.projects').split(' ')[1]}`} /> 
             </h3>
             <p className="text-gray-700">
-              E-commerce completos desarrollados con tecnologías modernas y mejores prácticas
+              {t('about.projects.desc')}
             </p>
           </motion.div>
           
@@ -124,10 +126,10 @@ const WhyWrlds = () => {
               <ChartBar className="w-8 h-8 text-gray-700" />
             </div>
             <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={10} suffix="+ tecnologías" />
+              <AnimatedCounter end={10} suffix={`+ ${t('about.technologies').split(' ')[1]}`} />
             </h3>
             <p className="text-gray-700">
-              Dominio de stack completo: React, Node.js, bases de datos, deployment y más
+              {t('about.technologies.desc')}
             </p>
           </motion.div>
         </motion.div>
@@ -138,10 +140,10 @@ const WhyWrlds = () => {
         }} variants={containerVariants}>
           <motion.div variants={itemVariants} className="text-center mb-8">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-              Lo que Puedo Aportar a tu Empresa
+              {t('about.contribute.title')}
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Como desarrollador junior, traigo energía, conocimientos actualizados y ganas de crecer profesionalmente
+              {t('about.contribute.subtitle')}
             </p>
           </motion.div>
           
@@ -152,8 +154,8 @@ const WhyWrlds = () => {
                   <Sparkles className="w-6 h-6 text-gray-700" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Tecnologías Modernas</h4>
-                  <p className="text-gray-700">Conocimiento actualizado en React, TypeScript, Node.js y las últimas tendencias del desarrollo web.</p>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">{t('about.modern.title')}</h4>
+                  <p className="text-gray-700">{t('about.modern.desc')}</p>
                 </div>
               </div>
             </motion.div>
@@ -164,8 +166,8 @@ const WhyWrlds = () => {
                   <Zap className="w-6 h-6 text-gray-700" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Aprendizaje Rápido</h4>
-                  <p className="text-gray-700">Capacidad de adaptarme rápidamente a nuevas tecnologías y metodologías de trabajo.</p>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">{t('about.learning.title')}</h4>
+                  <p className="text-gray-700">{t('about.learning.desc')}</p>
                 </div>
               </div>
             </motion.div>
@@ -176,8 +178,8 @@ const WhyWrlds = () => {
                   <Rocket className="w-6 h-6 text-gray-700" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Proyectos Completos</h4>
-                  <p className="text-gray-700">Experiencia desarrollando aplicaciones full stack desde cero hasta producción.</p>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">{t('about.complete.title')}</h4>
+                  <p className="text-gray-700">{t('about.complete.desc')}</p>
                 </div>
               </div>
             </motion.div>
@@ -188,8 +190,8 @@ const WhyWrlds = () => {
                   <Shield className="w-6 h-6 text-gray-700" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Compromiso y Dedicación</h4>
-                  <p className="text-gray-700">Motivación para crecer profesionalmente y contribuir al éxito del equipo.</p>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">{t('about.commitment.title')}</h4>
+                  <p className="text-gray-700">{t('about.commitment.desc')}</p>
                 </div>
               </div>
             </motion.div>
@@ -200,7 +202,7 @@ const WhyWrlds = () => {
               href="#contact" 
               className="inline-flex items-center px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-all group"
             >
-              Contáctame para conocer más sobre mi experiencia
+              {t('about.contact')}
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
           </motion.div>
