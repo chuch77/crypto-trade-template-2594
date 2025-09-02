@@ -5,8 +5,11 @@ import { useEffect } from 'react';
 import PageLayout from '@/components/PageLayout';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Services = () => {
+  const { t, language } = useLanguage();
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -92,7 +95,7 @@ const Services = () => {
           <div className="max-w-6xl mx-auto">
             <Link to="/" className="inline-flex items-center text-gray-500 hover:text-gray-700 mb-6 transition-colors">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Volver al Inicio
+              {t('services.back')}
             </Link>
             
             <motion.h1 
@@ -101,7 +104,7 @@ const Services = () => {
               transition={{ duration: 0.5 }} 
               className="text-4xl font-bold mb-6"
             >
-              Mis Servicios
+              {t('services.title')}
             </motion.h1>
             
             <motion.p 
@@ -110,7 +113,7 @@ const Services = () => {
               transition={{ duration: 0.5, delay: 0.2 }} 
               className="text-xl text-gray-600 mb-12"
             >
-              Servicios profesionales de desarrollo web con tarifas por hora competitivas
+              {t('services.subtitle')}
             </motion.p>
 
             {/* Services Grid */}
@@ -129,15 +132,15 @@ const Services = () => {
                           {service.icon}
                         </div>
                         <div>
-                          <h3 className="text-xl font-bold">{service.title}</h3>
+                          <h3 className="text-xl font-bold">{language === 'en' ? service.titleEn : service.title}</h3>
                           <p className="text-2xl font-bold text-blue-600">{service.price}</p>
                         </div>
                       </div>
                       
-                      <p className="text-gray-600 mb-4">{service.description}</p>
+                      <p className="text-gray-600 mb-4">{language === 'en' ? service.descriptionEn : service.description}</p>
                       
                       <div className="mb-4">
-                        <h4 className="font-semibold mb-2">Tecnologías:</h4>
+                        <h4 className="font-semibold mb-2">{t('services.technologies')}</h4>
                         <div className="flex flex-wrap gap-2">
                           {service.technologies.map((tech, idx) => (
                             <span 
@@ -162,9 +165,9 @@ const Services = () => {
               transition={{ duration: 0.6, delay: 0.8 }}
               className="bg-gray-50 rounded-xl p-8 mb-12"
             >
-              <h2 className="text-3xl font-bold mb-6 text-center">Tecnologías que Domino</h2>
+              <h2 className="text-3xl font-bold mb-6 text-center">{t('services.techTitle')}</h2>
               <p className="text-gray-600 text-center mb-8">
-                Más de 20 tecnologías modernas para crear soluciones completas
+                {t('services.techSubtitle')}
               </p>
               
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
@@ -189,10 +192,9 @@ const Services = () => {
               transition={{ duration: 0.6, delay: 1 }}
               className="text-center bg-blue-50 rounded-xl p-8"
             >
-              <h2 className="text-3xl font-bold mb-4">¿Listo para comenzar tu proyecto?</h2>
+              <h2 className="text-3xl font-bold mb-4">{t('services.cta.title')}</h2>
               <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Contáctame para discutir tu proyecto y recibir una cotización personalizada. 
-                Todos los servicios incluyen código limpio, documentación y soporte post-entrega.
+                {t('services.cta.subtitle')}
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -200,14 +202,14 @@ const Services = () => {
                   onClick={scrollToContact}
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3"
                 >
-                  Solicitar Cotización
+                  {t('services.cta.quote')}
                 </Button>
                 <Button 
                   variant="outline"
                   onClick={() => window.location.href = "/#pricing"}
                   className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3"
                 >
-                  Ver Planes de Precios
+                  {t('services.cta.plans')}
                 </Button>
               </div>
             </motion.div>
