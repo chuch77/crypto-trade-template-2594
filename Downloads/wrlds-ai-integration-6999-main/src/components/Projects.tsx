@@ -49,7 +49,7 @@ const Projects = () => {
     description: t('project.crypto.desc'),
     tags: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
     imageUrl: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop",
-    link: "https://crypto-trade-template-2594.vercel.app"
+    link: "/links"
   },
   {
     id: 5,
