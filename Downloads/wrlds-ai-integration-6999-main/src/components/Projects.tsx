@@ -9,9 +9,9 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const projects = [
   {
     id: 1,
-    title: "Tienda de Ropa Online",
-    brand: "Fashion Store",
-    description: "E-commerce completo para tienda de ropa con catálogo de productos, carrito de compras, sistema de pagos y panel de administración.",
+    title: t('project.fashion.title'),
+    brand: t('project.fashion.brand'),
+    description: t('project.fashion.desc'),
     tags: ["React", "Node.js", "MongoDB", "Stripe"],
     imageUrl: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
     isFeatured: true,
@@ -22,36 +22,36 @@ const projects = [
   },
   {
     id: 2,
-    title: "Tienda de Suplementos",
-    brand: "Gym Supplements",
-    description: "Plataforma de venta de suplementos deportivos con sistema de recomendaciones y seguimiento de pedidos.",
+    title: t('project.gym.title'),
+    brand: t('project.gym.brand'),
+    description: t('project.gym.desc'),
     tags: ["E-commerce", "React", "Express", "PayPal"],
     imageUrl: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
     link: "/projects/gym-supplements"
   },
   {
     id: 3,
-    title: "Librería Online",
-    brand: "BookStore Digital",
-    description: "Sistema de venta de libros digitales y físicos con búsqueda avanzada, reseñas de usuarios y sistema de recomendaciones.",
+    title: t('project.bookstore.title'),
+    brand: t('project.bookstore.brand'),
+    description: t('project.bookstore.desc'),
     tags: ["TypeScript", "Next.js", "PostgreSQL", "Cloudinary"],
     imageUrl: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=600&fit=crop",
     link: "/projects/bookstore"
   },
   {
     id: 4,
-    title: "Plataforma Crypto",
-    brand: "CryptoTrade",
-    description: "Aplicación para seguimiento de criptomonedas con gráficos en tiempo real, portfolio personal y alertas de precios.",
+    title: t('project.crypto.title'),
+    brand: t('project.crypto.brand'),
+    description: t('project.crypto.desc'),
     tags: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
     imageUrl: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop",
     link: "https://crypto-trade-template-2594.vercel.app"
   },
   {
     id: 5,
-    title: "E-commerce Electrónicos",
-    brand: "TechStore",
-    description: "Tienda online de productos electrónicos con comparador de precios, especificaciones técnicas y sistema de garantías.",
+    title: t('project.tech.title'),
+    brand: t('project.tech.brand'),
+    description: t('project.tech.desc'),
     tags: ["Vue.js", "Laravel", "MySQL", "Redis"],
     imageUrl: "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=800&h=600&fit=crop",
     link: "/projects/electronics-store"
