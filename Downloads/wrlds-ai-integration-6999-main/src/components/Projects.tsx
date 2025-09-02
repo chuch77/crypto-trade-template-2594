@@ -5,8 +5,12 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useLanguage } from '@/contexts/LanguageContext';
+import '../styles/responsive.css';
 
-const projects = [
+const Projects = () => {
+  const { t } = useLanguage();
+  
+  const projects = [
   {
     id: 1,
     title: t('project.fashion.title'),
@@ -58,8 +62,6 @@ const projects = [
   }
 ];
 
-const Projects = () => {
-  const { t } = useLanguage();
   const [activeProject, setActiveProject] = useState(0);
 
   const projectsRef = useRef<HTMLDivElement>(null);
@@ -155,7 +157,7 @@ const Projects = () => {
         </div>
         
         <div 
-          className="relative h-[450px] sm:h-[500px] md:h-[550px] overflow-hidden" 
+          className="relative h-[400px] sm:h-[480px] md:h-[520px] lg:h-[560px] overflow-hidden" 
           onMouseEnter={() => setIsHovering(true)} 
           onMouseLeave={() => setIsHovering(false)}
           onTouchStart={onTouchStart}
@@ -170,9 +172,9 @@ const Projects = () => {
                 className={`absolute top-0 w-full max-w-xs sm:max-w-sm md:max-w-md transform transition-all duration-500 ${getCardAnimationClass(index)}`} 
                 style={{ transitionDelay: `${index * 50}ms` }}
               >
-                <Card className="overflow-hidden h-[400px] sm:h-[450px] md:h-[500px] border border-gray-100 shadow-sm hover:shadow-md flex flex-col">
+                <Card className="project-card overflow-hidden h-[360px] sm:h-[400px] md:h-[440px] lg:h-[480px] border border-gray-100 shadow-sm hover:shadow-md flex flex-col mx-1 sm:mx-2">
                   <div 
-                    className="relative bg-black p-4 sm:p-6 flex items-center justify-center h-32 sm:h-40 md:h-48 overflow-hidden"
+                    className="project-header relative bg-black p-2 sm:p-4 md:p-6 flex items-center justify-center h-24 sm:h-32 md:h-40 overflow-hidden"
                     style={{
                       backgroundImage: `url(${project.imageUrl})`,
                       backgroundSize: 'cover',
@@ -181,28 +183,28 @@ const Projects = () => {
                   >
                     <div className="absolute inset-0 bg-black/50"></div>
                     <div className="relative z-10 flex flex-col items-center justify-center">
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">{project.brand.toUpperCase()}</h3>
+                      <h3 className="project-title text-xs sm:text-base md:text-lg lg:text-xl font-bold text-white mb-1 sm:mb-2 text-center">{project.brand.toUpperCase()}</h3>
                       <div className="w-12 h-1 bg-white mb-2"></div>
-                      <p className="text-white/90 text-sm">{project.title}</p>
+                      <p className="text-white/90 text-xs sm:text-sm text-center">{project.title}</p>
                     </div>
                   </div>
                   
-                  <CardContent className="p-4 sm:p-6 flex flex-col flex-grow">
+                  <CardContent className="p-2 sm:p-4 md:p-6 flex flex-col flex-grow">
                     <div className="mb-4">
-                      <h3 className="text-xl font-bold mb-1 text-gray-800 group-hover:text-gray-500 transition-colors">
+                      <h3 className="text-sm sm:text-lg md:text-xl font-bold mb-1 text-gray-800 group-hover:text-gray-500 transition-colors">
                         {project.title}
                       </h3>
-                      <p className="text-gray-500 text-sm font-medium">{project.brand}</p>
+                      <p className="text-gray-500 text-xs sm:text-sm font-medium">{project.brand}</p>
                     </div>
                     
-                    <p className="text-gray-600 text-sm mb-4 flex-grow">{project.description}</p>
+                    <p className="project-description text-gray-600 text-xs sm:text-sm mb-2 sm:mb-4 flex-grow leading-tight sm:leading-relaxed">{project.description}</p>
                     
                     <div className="mt-auto">
                       <div className="flex flex-wrap gap-2 mb-4">
-                        {project.tags.map((tag, idx) => (
+                        {project.tags.slice(0, isMobile ? 2 : 4).map((tag, idx) => (
                           <span 
                             key={idx} 
-                            className="px-2 py-1 bg-gray-50 text-gray-600 rounded-full text-xs animate-pulse-slow" 
+                            className="project-tag px-1.5 sm:px-2 py-0.5 sm:py-1 bg-gray-50 text-gray-600 rounded-full text-xs animate-pulse-slow" 
                             style={{ animationDelay: `${idx * 300}ms` }}
                           >
                             {tag}
@@ -250,7 +252,7 @@ const Projects = () => {
             </>
           )}
           
-          <div className="absolute bottom-6 left-0 right-0 flex justify-center items-center space-x-3 z-30">
+          <div className="absolute bottom-3 sm:bottom-6 left-0 right-0 flex justify-center items-center space-x-2 sm:space-x-3 z-30">
             {projects.map((_, idx) => (
               <button 
                 key={idx} 
