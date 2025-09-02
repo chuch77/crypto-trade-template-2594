@@ -111,7 +111,10 @@ const translations = {
     'pricing.popular': 'Más Popular',
     'pricing.start': 'Comenzar Proyecto',
     'pricing.custom': '¿Necesitas algo personalizado?',
-    'pricing.quote': 'Solicitar Cotización Personalizada'
+    'pricing.quote': 'Solicitar Cotización Personalizada',
+    'tech.footer': 'Estas son algunas de las tecnologías principales que utilizo en mis proyectos de desarrollo web',
+    'buttons.needDev': '¿Necesitas un Desarrollador?',
+    'buttons.moreSkills': 'Ver Más Sobre Mis Habilidades'
   },
   en: {
     'nav.home': 'Home',
@@ -215,7 +218,10 @@ const translations = {
     'pricing.popular': 'Most Popular',
     'pricing.start': 'Start Project',
     'pricing.custom': 'Need something custom?',
-    'pricing.quote': 'Request Custom Quote'
+    'pricing.quote': 'Request Custom Quote',
+    'tech.footer': 'These are some of the main technologies I use in my web development projects',
+    'buttons.needDev': 'Need a Developer?',
+    'buttons.moreSkills': 'Learn More About My Skills'
   },
   fr: {
     'nav.home': 'Accueil',
