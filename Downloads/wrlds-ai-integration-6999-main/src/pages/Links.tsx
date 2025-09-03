@@ -16,53 +16,53 @@ const Links = () => {
   const projects = [
     {
       id: 1,
-      title: "E-commerce de Ropa",
-      description: "Tienda online completa con catálogo de productos, carrito de compras y sistema de pagos.",
+      titleKey: "projects.ecommerce.title",
+      descriptionKey: "projects.ecommerce.description",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "https://fashion-store-demo.vercel.app",
-      githubUrl: "https://github.com/jesuseliud/fashion-store",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
+      liveUrl: "https://moda-flow.vercel.app",
+      githubUrl: "https://github.com/chuch77/moda-flow",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
       category: "E-commerce"
     },
     {
       id: 2,
-      title: "CryptoTrade Platform",
-      description: "Plataforma de trading de criptomonedas con gráficos en tiempo real y portfolio personal.",
+      titleKey: "projects.crypto.title",
+      descriptionKey: "projects.crypto.description",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
-      liveUrl: "https://crypto-trade-template-2594.vercel.app",
-      githubUrl: "https://github.com/jesuseliud/crypto-trade",
-      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop",
+      liveUrl: "https://crypto-trade-template.vercel.app",
+      githubUrl: "https://github.com/chuch77/crypto-trade",
+      image: "https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=800&h=600&fit=crop",
       category: "Fintech"
     },
     {
       id: 3,
-      title: "Dashboard E-commerce Ropa",
-      description: "Panel de administración para gestión de inventario, pedidos y análisis de ventas.",
+      titleKey: "projects.dashboard.title",
+      descriptionKey: "projects.dashboard.description",
       technologies: ["React", "Chart.js", "Express", "MySQL"],
-      liveUrl: "https://fashion-dashboard-demo.vercel.app",
-      githubUrl: "https://github.com/jesuseliud/fashion-dashboard",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      liveUrl: "https://market-mosaic-five.vercel.app",
+      githubUrl: "https://github.com/chuch77/market-mosaic",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
       category: "Dashboard"
     },
     {
       id: 4,
-      title: "Suplementos del Gym",
-      description: "Tienda online especializada en suplementos deportivos con sistema de recomendaciones.",
+      titleKey: "projects.supplements.title",
+      descriptionKey: "projects.supplements.description",
       technologies: ["React", "Express", "PayPal", "PostgreSQL"],
-      liveUrl: "https://gym-supplements-store.vercel.app",
-      githubUrl: "https://github.com/jesuseliud/gym-supplements",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
+      liveUrl: "https://ascend-dash-34-jqf9.vercel.app",
+      githubUrl: "https://github.com/chuch77/ascend-dash-34",
+      image: "https://images.unsplash.com/photo-1594882645126-14020914d58d?w=800&h=600&fit=crop",
       category: "E-commerce"
     },
     {
       id: 5,
-      title: "Librería Digital",
-      description: "Sistema de venta de libros digitales y físicos con búsqueda avanzada y reseñas.",
-      technologies: ["Next.js", "TypeScript", "PostgreSQL", "Cloudinary"],
-      liveUrl: "https://digital-bookstore-demo.vercel.app",
-      githubUrl: "https://github.com/jesuseliud/digital-bookstore",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=600&fit=crop",
-      category: "E-commerce"
+      titleKey: "projects.supplementsDash.title",
+      descriptionKey: "projects.supplementsDash.description",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
+      liveUrl: "https://ascend-dash-77.vercel.app",
+      githubUrl: "https://github.com/chuch77/ascend-dash",
+      image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop",
+      category: "Dashboard"
     }
   ];
 
@@ -115,8 +115,8 @@ const Links = () => {
                     </div>
                     
                     <CardContent className="p-6">
-                      <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                      <p className="text-gray-600 mb-4 text-sm">{project.description}</p>
+                      <h3 className="text-xl font-bold mb-2">{t(project.titleKey)}</h3>
+                      <p className="text-gray-600 mb-4 text-sm">{t(project.descriptionKey)}</p>
                       
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.technologies.map((tech, idx) => (
@@ -140,13 +140,13 @@ const Links = () => {
                           {t('links.viewLive')}
                         </a>
                         <a 
-                          href={project.githubUrl} 
+                          href="https://github.com/chuch77" 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="flex items-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-900 transition-colors text-sm"
                         >
                           <Github className="w-4 h-4 mr-2" />
-                          {t('links.viewCode')}
+                          GitHub
                         </a>
                       </div>
                     </CardContent>
