@@ -84,7 +84,7 @@ export default function Supplements() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
+        className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4"
       >
         <div>
           <h1 className="text-2xl sm:text-3xl font-bold text-foreground">Supplements</h1>
@@ -103,7 +103,7 @@ export default function Supplements() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+        className="flex flex-col sm:flex-row gap-3 sm:gap-4"
       >
         <div className="relative flex-1">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -126,7 +126,7 @@ export default function Supplements() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 + index * 0.1 }}
-            className="dashboard-card-hover p-4 sm:p-6">
+            className="dashboard-card-hover p-4 sm:p-6"
           >
             <div className="flex items-start justify-between mb-3 sm:mb-4">
               <div className={`p-3 rounded-lg ${supplement.color}`}>
@@ -164,7 +164,7 @@ export default function Supplements() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+        className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4"
       >
         <div className="dashboard-card p-3 sm:p-4 text-center">
           <Package className="h-6 w-6 sm:h-8 sm:w-8 text-primary mx-auto mb-2" />
