@@ -52,7 +52,7 @@ export const OptimizedImage = ({
         )}
         loading={priority ? "eager" : "lazy"}
         decoding="async"
-        fetchPriority={priority ? "high" : "auto"}
+        fetchpriority={priority ? "high" : "auto"}
       />
     </div>
   );
