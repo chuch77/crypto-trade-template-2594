@@ -73,7 +73,7 @@ const Footer = () => {
                 24-48 horas
               </p>
               <a 
-                href="/cv-jesus-eliud-soto-mendez.pdf" 
+                href="/Jesus_Soto_VisualCV_Resume.pdf" 
                 download
                 className="inline-flex items-center px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 transition-colors mt-4"
               >

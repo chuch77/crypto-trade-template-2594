@@ -115,6 +115,16 @@ const Hero = () => {
                   {t('hero.contact')}
                   <MessageSquare className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
                 </button>
+                
+                {/* CV Download Button */}
+                <a 
+                  href="/Jesus_Soto_VisualCV_Resume.pdf" 
+                  download
+                  className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl hover:shadow-blue-300/20 flex items-center justify-center group text-sm sm:text-base font-medium"
+                >
+                  {t('hero.downloadCV')}
+                  <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+                </a>
               </motion.div>
             </motion.div>
           </div>
